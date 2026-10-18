@@ -1,156 +1,185 @@
+/* Productos - Skin Care */
+import GlowSerum from "../assets/skincare/serumforradiant/Principal.webp";
+import Moisturizer from "../assets/skincare/moisturizer/Principal.webp";
+import RealComplexion from "../assets/skincare/realcomplexionhyaluron/Principal.webp";
+import SetStep from "../assets/skincare/set3-step/Principal.webp";
+
+/* Categorías y Destacados principales */
+import LacticAcid from "../assets/skincare/lacticacid/Principal.jpg";
+import pdrnSerum from "../assets/skincare/pdrnserum/Principal.jpg";
+import GelMoisturizer from "../assets/skincare/gelmoisturizer/Principal.jpg";
+import SkinCT from "../assets/skincare/anuaserum/Principal.webp";
+import MultiStick from "../assets/makeup/multistick/Principal.jpg";
+import MatteLips from "../assets/makeup/mattelips/Principal.jpg";
+import BroncePowder from "../assets/makeup/broncepowder/Principal.jpg";
+import GlowPlay from "../assets/makeup/glowplay/Principal.jpg";
+import HighLigth from "../assets/makeup/higthlight/Principal.jpg";
+import PowderKiss from "../assets/makeup/powderkiss/Principal.jpg";
+
+/* Productos - Hair Care */
+import KitWella from "../assets/haircare/kitwella/Principal.jpg";
+import Ultimate from "../assets/haircare/ultimate/Principal.jpg";
+import ColorMotion from "../assets/haircare/colormotion/Principal.jpg";
+import OilReflection from "../assets/haircare/oilreflection/Principal.jpg";
+
+/* Productos - Sun Care */
+import SunProtection from "../assets/suncare/sunprotection/Principal.jpg";
+import Anthelios from "../assets/suncare/anthelios/Principal.jpg";
+import VitaminaC from "../assets/suncare/vitaminac/Principal.jpg";
+
 export const productos = [
   {
     id: 1,
     category: "SKIN CARE",
     titulo: "Anua Serum in Peach Water",
     precio: "4990",
-    image: "SkinCT",
+    image: SkinCT,
   },
   {
     id: 2,
     category: "SKIN CARE",
     titulo: "PDRN Sérum «ExosomeShot» de Pink Collagen",
     precio: "7990",
-    image: "pdrnSerum",
+    image: pdrnSerum,
   },
   {
     id: 3,
     category: "SKIN CARE",
     titulo: "Lactic Acid The Ordinary",
     precio: "25990",
-    image: "LacticAcid",
+    image: LacticAcid,
   },
   {
     id: 4,
     category: "SKIN CARE",
     titulo: "Hidra Intense Gel Moisturizer",
     precio: "6500",
-    image: "GelMoisturizer",
+    image: GelMoisturizer,
   },
   {
     id: 5,
     category: "SKIN CARE",
     titulo: "Glow Serum For Radiant Skin",
     precio: "10000",
-    image: "GlowSerum",
+    image: GlowSerum,
   },
   {
     id: 6,
     category: "SKIN CARE",
     titulo: "Hydra Moisturizer",
     precio: "17000",
-    image: "Moisturizer",
+    image: Moisturizer,
   },
   {
     id: 7,
     category: "SKIN CARE",
     titulo: "Real Complexion Hyaluron HANSKIN",
     precio: "13990",
-    image: "RealComplexion",
+    image: RealComplexion,
   },
   {
     id: 8,
     category: "SKIN CARE",
     titulo: "Set 3-Step Skin Care",
     precio: "70000",
-    image: "SetStep",
+    image: SetStep,
   },
   {
     id: 9,
     category: "MAKE UP",
     titulo: "Monochromatic Multi-Stick",
     precio: "8990",
-    image: "MultiStick",
+    image: MultiStick,
   },
   {
     id: 10,
     category: "MAKE UP",
     titulo: "Matte Lipstick Rare Beauty",
     precio: "15000",
-    image: "MatteLips",
+    image: MatteLips,
   },
   {
     id: 11,
     category: "MAKE UP",
     titulo: "Broncer Powder Mac Cosmetic",
     precio: "50000",
-    image: "BroncePowder",
+    image: BroncePowder,
   },
   {
     id: 12,
     category: "MAKE UP",
     titulo: "Glow Play Blush Mac Cosmetic",
     precio: "25000",
-    image: "GlowPlay",
+    image: GlowPlay,
   },
   {
     id: 13,
     category: "MAKE UP",
     titulo: "Higth Light Powder Rare Beauty",
     precio: "17000",
-    image: "HighLigth",
+    image: HighLigth,
   },
   {
     id: 14,
     category: "MAKE UP",
     titulo: "Powder Kiss Lipsticks Mac Cosmetic",
     precio: "25000",
-    image: "PowderKiss",
+    image: PowderKiss,
   },
   {
     id: 15,
     category: "HAIR CARE",
     titulo: "Kit Wella Professionals",
     precio: "60000",
-    image: "KitWella",
+    image: KitWella,
   },
   {
     id: 16,
     category: "HAIR CARE",
     titulo: "Ultimate Sooth Bundle Wella Professionals",
     precio: "89000",
-    image: "Ultimate",
+    image: Ultimate,
   },
   {
     id: 17,
     category: "HAIR CARE",
     titulo: "Color Motion Wella Professionals",
     precio: "55990",
-    image: "ColorMotion",
+    image: ColorMotion,
   },
   {
     id: 18,
     category: "HAIR CARE",
     titulo: "Oil Reflections Wella Professionals",
     precio: "77990",
-    image: "OilReflection",
+    image: OilReflection,
   },
   {
     id: 19,
     category: "SUN CARE",
     titulo: "Sun Protection Cream Renew",
     precio: "11990",
-    image: "SunProtection",
+    image: SunProtection,
   },
   {
     id: 20,
     category: "SUN CARE",
     titulo: "Anthelios UvMune 400 La Roche-Posay",
     precio: "15990",
-    image: "Anthelios",
+    image: Anthelios,
   },
   {
     id: 21,
     category: "SUN CARE",
     titulo: "Vitamin C Serum IMAGE care",
     precio: "7990",
-    image: "VitaminaC",
+    image: VitaminaC,
   },
   {
     id: 22,
     category: "SUN CARE",
     titulo: "Lactic Acid The Ordinary",
     precio: "25990",
-    image: "LacticAcid",
+    image: LacticAcid,
   },
 ];

@@ -14,11 +14,7 @@ import MakeUpCT from "./assets/makeup/Categoria.jpg";
 import HairCareCT from "./assets/haircare/Categoria.jpg";
 import SunCareCT from "./assets/suncare/Categoria.jpg";
 
-/* Productos - Skin Care */
-import GlowSerum from "./assets/skincare/serumforradiant/Principal.webp";
-import Moisturizer from "./assets/skincare/moisturizer/Principal.webp";
-import RealComplexion from "./assets/skincare/realcomplexionhyaluron/Principal.webp";
-import SetStep from "./assets/skincare/set3-step/Principal.webp";
+
 
 /* Productos - Make up */
 import MultiStick from "./assets/makeup/multistick/Principal.jpg";
