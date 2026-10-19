@@ -129,6 +129,9 @@
   .terms input[type="checkbox"] {
     accent-color: #b06775;
     margin-top: 6px;
+    width: unset;
+    position: relative;
+    bottom: 10px;
   }
 
   .terms p {

@@ -243,7 +243,7 @@ a {
 .header a:hover,
 .nav-link:hover {
   text-decoration: none;
-  color: #c97387; /* O el color rosado/principal que uses */
+  color: #c97387;
 }
 
 .header-container {
@@ -281,6 +281,18 @@ a {
   font-size: 1.9rem;
 }
 
+.bi.bi-bag:hover {
+  color: #c97387;
+  transform: scale(1.09);
+  cursor: pointer;
+}
+
+.bi.bi-person:hover {
+  color: #c97387;
+  transform: scale(1.09);
+  cursor: pointer;
+}
+
 .icono {
   display: flex;
   flex-direction: row;
@@ -290,12 +302,7 @@ a {
     transform 0.2s ease,
     color 0.2s ease;
   border-color: white;
-}
-
-.icono:hover {
-  color: #c97387;
-  transform: scale(1.09);
-  cursor: pointer;
+  padding-bottom: 10px;
 }
 
 .categoriaGrid-section,

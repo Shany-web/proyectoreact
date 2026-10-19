@@ -36,12 +36,12 @@ export const Header = () => {
           </ul>
         </nav>
         <div className="icono">
-          <a href="#">
+          <Link to="/login" className="icono">
             <i className="bi bi-person"></i>
-          </a>
-          <a href="#" className="icono">
+          </Link>
+          <Link to="/shop" className="icono">
             <i className="bi bi-bag"></i>
-          </a>
+          </Link>
         </div>
       </div>
     </header>

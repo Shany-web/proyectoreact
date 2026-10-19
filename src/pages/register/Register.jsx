@@ -1,10 +1,34 @@
-import React from "react";
-import "./Register.css";
-import { Link } from "react-router";
+import React, { useState } from "react";
+import "./Register.scss";
+import { Link, useNavigate } from "react-router";
 import { Button } from "../../components/atoms/Button";
 import Input from "../../components/atoms/TextInput";
+import { usuariosMock } from "../../mocks/usuarioMock";
 
 const Register = () => {
+  const [nombre, setNombre] = useState("");
+  const [email, setEmail] = useState("");
+  const [contrasenia1, setContrasenia1] = useState("");
+  const [contrasenia2, setContrasenia2] = useState("");
+  const navigate = useNavigate();
+
+  const register = () => {
+    let user = usuariosMock.find((usuario) => usuario.email === email);
+    console.log(user);
+    if (user) {
+      console.log("Usuario ya existe");
+    } else if (contrasenia1.trim() != contrasenia2.trim()) {
+      console.log("deben ser igual.");
+    } else {
+      usuariosMock.push({
+        nombre,
+        email,
+        contrasenia1,
+      });
+      navigate("/shop");
+    }
+  };
+
   return (
     <>
       <div className="register-page">
@@ -30,6 +54,8 @@ const Register = () => {
                 placeholder="nombre"
                 icon="bi-person"
                 autoComplete="name"
+                value={nombre}
+                onChange={(event) => setNombre(event.target.value)}
                 required
               />
 
@@ -41,7 +67,9 @@ const Register = () => {
                 placeholder="nombre@gmail.com"
                 icon="bi-envelope"
                 autoComplete="email"
+                value={email}
                 inputMode="email"
+                onChange={(event) => setEmail(event.target.value)}
                 required
               />
 
@@ -53,7 +81,9 @@ const Register = () => {
                 placeholder="Contraseña"
                 icon="bi-lock"
                 autoComplete="new-password"
+                value={contrasenia1}
                 minLength={8}
+                onChange={(event) => setContrasenia1(event.target.value)}
                 required
               />
 
@@ -65,6 +95,8 @@ const Register = () => {
                 placeholder="Confirma tu contraseña"
                 icon="bi-lock"
                 autoComplete="new-password"
+                value={contrasenia2}
+                onChange={(event) => setContrasenia2(event.target.value)}
                 required
               />
             </div>
@@ -76,7 +108,9 @@ const Register = () => {
               <a href="#"> Privacy&Policy.</a>
             </p>
             <div>
-              <Button variant="primary">CREAR UNA CUENTA</Button>
+              <Button onClick={register} variant="primary">
+                CREAR UNA CUENTA
+              </Button>
             </div>
           </div>
           <span>
